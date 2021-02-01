@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arizona Environmental Justice Characteristics</title>
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+     <!-- Preloader -->
+    <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
+
+    <!-- Icon Font-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/lte-ie7.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+                <!-- Preloader -->
+                <div id="preloader">
+                    <div id="status">&nbsp;</div>
+                </div>
+
+            <header id="HOME" style="background-position: 50% -125px;">
+            <div class="section_overlay">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="C:\Users\HP\Desktop\ev_portfolio\index.html#WORK">Home</a></li>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container -->
+                </nav> 
+
+    </section>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="contact_title  wow fadeInUp animated">
+                        <h1>Arizona Environmental Justice Characteristics</h1>
+                        <img src="images/shape.png" alt="">
+                        <p>In my recent studies regarding the locations of Superfund sites (or sites contaminated by hazardous waste and therefore managed by the Environmental Protection Agency (EPA), I found that 532 (nearly 25%) total Superfund sites are located in Indian Country, or in territories governed by indigenous communities.<br>
+
+                        </br>Superfund sites are characterized by severe pollution and then abandonment by corporations, which in turn dumps the serious environmental, health, and economic consequences affiliated with these sites onto nearby residents. On Navajo lands in particular, over 500 abandoned uranium mines (not all of which are currently Superfund sites) have contributed to dangerously high levels of radiation, which contaminates homes and water sources. Other recent research findings illustrating the socioeconomic and racial disparities in the impacts of pollution in addition to the release of the EPA’s nationwide Environmental Justice Screening dataset have inspired me to analyze and map various environmental justice characteristics in the state of Arizona, which includes Navajo lands.<br>
+
+                        </br>The overarching goals of this analysis are to use the EPA Environmental Justice Screening dataset to 1) determine to what extent the percentage of minority (non-white) populations is correlated to variables such as cancer risk and proximity to Superfund sites and to 2) determine the suitability of this dataset in modeling these socioeconomic and racial disparities that I have researched.<br>
+
+                    </br>This analysis entails an exploratory analysis of the relationships between chosen variables (using the seaborn Python library and a Pearson correlation analysis) as well as the production of static maps to visualize these relationships. Correlation was tested to determine relationships between the percentage of minority (non-white) populations and five other variables: % low-income population, the air toxins cancer risk, the respiratory hazard index, the lead paint prevalence index, and proximity to National Priority List (NPL) sites (or extreme cases of Superfund sites).<br>
+
+            </br>The air toxins cancer risk and respiratory hazard index variables were found to have the two most significant correlation coefficients at .78 and .77, respectively. These relatively strong positive trends indicate that as the percentage of minority population rises in a census block group, cancer risk and respiratory hazard also both rise. The variable with no correlation is proximity to NPL sites, with a correlation coefficient of 0.07.<br>
+
+        </br>Scroll down to see a choropleth map of each tested variable for Arizona census block groups. All maps were made using ArcGIS Pro.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h3><b>Variable Overlays</b></h3>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="PercentMinority.png" target="_blank"><img src="PercentMinority.png" width="700px" alt="Percent Minority"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="PercentLI.png" target="_blank"><img src="PercentLI.png" width="700px" alt="Percent Low-Income"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="CancerRisk.png" target="_blank"><img src="CancerRisk.png" width="700px" alt="Cancer Risk"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="RespHazard.png" target="_blank"><img src="RespHazard.png" width="700px" alt="Respiratory Hazard"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="LeadPaint.png" target="_blank"><img src="LeadPaint.png" width="700px" alt="Lead Paint Index"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="NPL.png" target="_blank"><img src="NPL.png" width="700px" alt="NPL Site Proximity"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="contact_title  wow fadeInUp animated">
+                        <p>Overall, the results of the exploratory analysis largely agreed with what I had already been expecting; for example, the somewhat high correlation between minority population and lead paint prevalence is already well-known nationally. One result that was surprising is that no NPL sites are located within the First Nation territories; given my research prior to the analysis, I was expecting at least a slightly higher correlation between minority population and the locations of NPL sites.<br>
+
+                        </br> The results of this analysis indicate that the number of toxic sites such as the 500 located on Navajo lands is largely underrepresented by the EPA Environmental Justice dataset; this could influence decision-makers and researchers relying on this dataset to overlook the harm that sites of pollution not listed as NPL bring to communities. Because NPL sites are only a subset of national Superfund sites, additional analyses should be conducted with Superfund site locations to determine the relationship with the minority population percentage. However, the EPA should consider adding a Superfund site proximity variable (or other variables that can distinguish harmful sites such as the uranium mines) to its dataset for a more accurate representation of pollution.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact" id="CONTACT">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="contact_title  wow fadeInUp animated">
+                        <h1>get in touch</h1>
+                        <img src="images/shape.png" alt="">
+                        <p>Thank you for stopping by! If you'd like to get in touch, please feel free to email me at the address below or send me a message on my <a href="https://www.linkedin.com/in/evelyn-gorey-06a913150/">LinkedIn</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3  wow fadeInLeft animated">
+
+                    <div class="single_contact_info">
+                        <h2>Email Me</h2>
+                        <p>michelle.evelyn2@gmail.com</p>
+                    </div>
+    </section>
+
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyright_text   wow fadeInUp animated">
+                        <p>&copy; brandy 2015. All Right Reserved By <a href="http://www.themeforest.net/user/thecodecafe"target="_blank">Code Cafe Team</a></p>
+                        <p>Made with love for creative people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>

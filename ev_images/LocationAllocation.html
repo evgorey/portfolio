@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Location Allocation Analysis: Philadelphia L&I Offices</title>
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+     <!-- Preloader -->
+    <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
+
+    <!-- Icon Font-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/lte-ie7.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+                <!-- Preloader -->
+                <div id="preloader">
+                    <div id="status">&nbsp;</div>
+                </div>
+
+                <header id="HOME" style="background-position: 50% -125px;">
+            <div class="section_overlay">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="C:\Users\HP\Desktop\ev_portfolio\index.html#WORK">Home</a></li>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container -->
+                </nav> 
+
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="contact_title  wow fadeInUp animated">
+                        <h1>Location Allocation Analysis: Philadelphia L&I Offices</h1>
+                        <img src="images/shape.png" alt="">
+                        <p>Below is a lab completed for Urban GIS (Fall 2019); in this lab, I determined the locations of 4 temporary Licensing & Inspection (L&I) offices (which would be located at existing Free Library of Philadelphia branches) to serve in addition to the existing L&I offices. A Location Allocation analysis (using Dijkstra's Algorithm) was performed to determine new locations and to highlight the need for new offices in underserved parts of the city.<br></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h3><b>Existing Facilities</b></h3>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="UrbanGIS_CurrentFacilities.png.jpg" target="_blank"><img src="UrbanGIS_CurrentFacilities.png.jpg" width="700px" alt="Existing Facilities"/></a><p>Figure 1 above displays the results of a Closest Facility analysis (a Network Analyst tool) to measure route length in feet from each existing L&I District Office to each census tract using the Philadelphia road network. The results show that regions such as Northeast Philadelphia, some of South Philadelphia, some of Northwest Philadelphia, and the River Wards areas could benefit from another office. This analysis takes into consideration distance by car only; public transit and population demographics are not included. The census tracts are shown in the choropleth map with five quantile breaks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h3><b>Proposed Facilities</b></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="UrbanGIS_ProposedFacilities.png.jpg" target="_blank"><img src="UrbanGIS_ProposedFacilities.png.jpg" width="700px" alt="Proposed Facilities"/></a><p>Figure 2 above determines 4 temporary L&I district offices (housed within existing Free Library of Philadelphia branches) to accompany the existing L&I offices. To determine these temporary office locations, a Location Allocation analysis was performed using the census tracts' centroids.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h3><b>New Facilities</b></h3>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="UrbanGIS_NewFacilities.png.jpg" target="_blank"><img src="UrbanGIS_NewFacilities.png.jpg" width="700px" alt="New Facilities"/></a><p>Figure 3 above depicts the new route lengths in feet from each census tract centroid to the L&I offices (with the chosen temporary library branch offices included). Again, the choropleth map breaks down the cesnus tracts into five quantiles. The map results show that there are still areas under-served, but the addition of 4 new offices in areas that were previously lacking does help decrease the route lengths for more areas.<br>
+
+                        </br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="CONTACT">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="contact_title  wow fadeInUp animated">
+                        <h1>get in touch</h1>
+                        <img src="images/shape.png" alt="">
+                        <p>Thank you for stopping by! If you'd like to get in touch, please feel free to email me at the address below or send me a message on my <a href="https://www.linkedin.com/in/evelyn-gorey-06a913150/">LinkedIn</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3  wow fadeInLeft animated">
+
+                    <div class="single_contact_info">
+                        <h2>Email Me</h2>
+                        <p>michelle.evelyn2@gmail.com</p>
+                    </div>
+    </section>
+
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyright_text   wow fadeInUp animated">
+                        <p>&copy; brandy 2015. All Right Reserved By <a href="http://www.themeforest.net/user/thecodecafe"target="_blank">Code Cafe Team</a></p>
+                        <p>Made with love for creative people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
