@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Philadelphia Solar Panel Study</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.6.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Evelyn Gorey GIS Portfolio.</a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-10">
+            <h2>Philadelphia Solar Panel Study</h2>
+            <p class="mb-4"><span class="text-muted">GIS Analysis &amp; Coursework</span></p>
+            <p>Below is a lab completed for Urban GIS (Fall 2019). Solar panel installation locations (obtained from OpenDataPhilly) were geocoded, and Euclidean Distance and point density was measured for each census tract based on tract distance and density from each installation. Both were ranked into five quantiles for statistical analysis and then compared to the demographic measure with the highest statistical significance (percentage of non-white/minority population). All data was calculated and presented at the census tract level. JMP, a statistical software, was used for the ANOVA test. Distance is measured in kilometers and is ranked for each tract.<br></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/UrbanGIS_DistanceDensity.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="h3">Distance & Density of Solar Panel Installations</h3>
+                <div class="mb-5">
+                  <p>Distance is measured in kilometers and is ranked for each tract. A point density raster was created to determine the number of solar panel installations, and the ArcGIS Zonal Statistics as Table tool was then used to determine the density for each census tract.</p>
+            </div>
+          </div>
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/UrbanGIS_Demographics.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="h3">Demographic Variable Comparison</h3>
+
+                <div class="mb-5">
+                  <p>Upon performing an ANOVA test using JMP, it was discovered that the most statistically significant factor is the minority population variable (the F-ratios for distance density for minority population percentage are 10.8* and 16.4*, respectively). The percentage of minority population in Philadelphia is shown with a choropleth map with both distance and density ranks (1 being the farthest distance/lowest density of solar installations and 5 being the closest/most dense) overlaid.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Evelyn Gorey GIS Portfolio. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://www.linkedin.com/in/evelyn-gorey-06a913150/"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

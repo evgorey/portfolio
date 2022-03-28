@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tsunami Hazard & Vulnerability Mapping in Hawaii</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.6.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Evelyn Gorey GIS Portfolio.</a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-10">
+            <h2>Tsunami Hazard & Vulnerability Mapping in Hawaii</h2>
+            <p class="mb-4"><span class="text-muted">GIS Analysis &amp; Coursework</span></p>
+            <p>Below are the results of my final project for Environmental GIS (Spring 2019), which was titled Tsunami Hazard & Vulnerability Mapping in Hawaii. The project involved creating weighted hazard and vulnerability indexes to produce an overall Composite Risk Index map. Data was obtained from the GIS Department for the State of Hawaii and from the U.S. Census Bureau. The hazard index was based on pre-established evacuation zones (based on elevation and historic tsunami zones) within all islands of Hawaii; four hazard zones were ranked and weighted.<br></p>
+          </br>The vulnerability index was based on demographic data and broken up into 3 weighted inputs: Exposure (total population), Susceptibility (population over the age of 65, children under the age of 18, median income, and Asian/Pacific Islander population), and Coping Capacity (number of one-person households). All had equal weights of 0.3 to create the vulnerability Index. Both the hazard and vulnerability indexes had equal weights of 0.5 to create the Composite Risk Index.
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/hazardrisktest.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="h3">Hazard Risk Index</h3>
+
+                <div class="mb-5">
+                  <p>Hazard zones include 4 (most hazardous; evacuation zones), 3 (hazardous; zones which will be evacuated only in extreme cases), 2 (less hazardous; census tracts neighboring extreme hazardous zones), and 4 (not hazardous; tracts not touching zones 3 & 4).</p>
+            </div>
+          </div>
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/vulnerability.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="h3">Vulnerability Index</h3>
+
+                <div class="mb-5">
+                  <p>The map to the left depicts the vulnerability index as applied to Hawaii's census tracts. The darkest shade of blue represents the most vulnerable tracts (3.21 - 4) while the lightest shade of blue represents the least vulnerable tracts (1 - 1.61). These scores are derived from the aggregated weights of each aforementioned demographic measure.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/finalallpolygons.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="h3">Composite Risk Index</h3>
+
+                <div class="mb-5">
+                  <p>The map tp the left depicts the Composite Risk Index spread across both hazard zones and census tracts; this index is the aggregated product of the equally weighted hazard and vulnerability indices. The product closely resembles the hazard index map in that the most hazardous zones are still that of the evacuation zones, but it includes pertinent population vulnerability data as well. The red zones (3.26 - 4) are most hazardous, while the dark green zones (1 - 1.75) are the least hazardous. Zones/tracts were divided into four categories ranging from 1 (least hazardous) to 4 (most hazardous) using the Natural Breaks (Jenks) classification.
+</p>
+            </div>
+          </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Evelyn Gorey GIS Portfolio. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://www.linkedin.com/in/evelyn-gorey-06a913150/"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

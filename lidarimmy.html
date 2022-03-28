@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Relief Maps & LiDAR Visualization of Yosemite National Park</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.6.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Evelyn Gorey GIS Portfolio.</a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-8">
+            <h2>Relief Maps & LiDAR Visualization of Sequoia National Park</h2>
+            <p class="mb-4"><span class="text-muted">Cartography</span></p>
+            <p>For a friend's music video featuring multiple different national parks throughout the U.S., I wanted to create a set of reference maps, including a map of California with Sequoia National Park highlighted. The map was edited into the video and displayed during the video clips featuring Sequoia.<br>
+
+            </br>During video clips within the music video of the treetops from the forest floor, I wanted to provide a 3D LiDAR view of the same forest shown in the video. The data was downloaded from USGS's <a href="https://www.usgs.gov/programs/national-geospatial-program/national-map"><font color="teal"><b>National Map</b></font></a> and visualized using <a href="https://potree.github.io/"><font color="teal"><b>Potree</b></font></a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-6">
+              <img src="assets/img/CA_sequoia.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <div class="fixed">
+                <h3 class="h3">Relief Reference Map</h3>
+
+                <div class="mb-5">
+                  <p>The map was styled as a high-contrast relief map to highlight areas of high elevation. Hillshade was created using R and QGIS based on a DEM covering the state of California. The hillshade, DEM, and other layers were overlaid and symbolized to create the color scheme of the map.<br>
+
+                  </br>The symbol representing the exact location of Sequoia National Park was styled to match the album artwork.<br>
+
+                </br>An inset map was added to show a simplified view of the landscape around the area the video clips were filmed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="site-section pb-1">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YraCi-w18T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 ml-auto">
+              <div class="fixed">
+                <h3 class="h3">LiDAR Visualization Using Potree</h3>
+
+                <div class="mb-5">
+                  <p>LiDAR data from a subset of the park's boundaries was chosen due the presence of sequoia trees, which was the focus of the corresponding video clips in the music video.<br>
+
+                  </br>Due to the size of the data, I used <a href="https://www.apachefriends.org/index.html"><font color="teal"><b>XAMPP</b></font></a> and Potree to host and visualize my LiDAR data. I was able to change colors to match the data's classification and elevation characteristics. I then took pictures and screen recordings of the 3D scene to edit into the music video.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-section pb-1">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-6">
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/uwchi2xuxJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Evelyn Gorey GIS Portfolio. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://www.linkedin.com/in/evelyn-gorey-06a913150/"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
