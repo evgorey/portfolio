@@ -1,0 +1,5 @@
+1. sfnetworks analysis in R
+2. asset map workflow in Python? or some cleaning/automation in Notebooks
+3. dashboard screenshot from PPR?
+4. Place of Injury Notebook once the CHART is out?
+5. More remote sensing analyses for fun!
