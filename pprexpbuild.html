@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kauri Dieback Analysis: Waitakere Ranges, Aotearoa/New Zealand</title>
+  <title>Internal Parks & Recreation Properties Experience Builder</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -66,13 +66,11 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-10">
-            <h2>Kauri Dieback Analysis: Waitakere Ranges, Aotearoa/New Zealand</h2>
-            <p class="mb-4"><span class="text-muted">Remote Sensing Coursework &amp; Research</span></p>
-            <p>Below are resulting maps for my Environmental Remote Sensing (Spring 2020) and CAPSTONE final project, which sought to determine the prevalence of Kauri Dieback (the widespread disease of Aotearoa/New Zealand's treasured kauri tree) within a Waitakere Ranges study area on the North Island. Due to the plant pathogen being spread by soil movement, remote sensing analyses provide some of the most accurate and low-risk surveillance measures of the disease. Resulting maps, if based upon high-quality data, can detect even early symptoms of the disease within kauri canopies and can inform more effective planning and management efforts.</br>
+            <h2>Internal Parks & Recreation Properties Experience Builder</h2>
+            <p class="mb-4"><span class="text-muted">Web Mapping</span></p>
+            <p>The Philadelphia Parks & Recreation (PPR) GIS team maintains a properties layer, which represents all parks maintained by PPR and all other sites that PPR owns. PPR staff who manage funding, operations, programming, and park maintenance requested an internal web mapping application to easily locate their properties and find relevant information about each property, such as the asset ID, the acreage, and the use type. I developed the internal web mapping application using <b><a href="https://www.esri.com/en-us/arcgis/products/arcgis-experience-builder/overview"><font color='teal'>ArcGIS Experience Builder</font></a></b>.<br>
 
-            </br>My study used four separate datasets in conjunction to classify the study area's vegetation into 3 classes: dead kauri, other trees, and vital kauri. This was accomplished by utilizing machine learning to conduct a supervised land cover classification (Random Forest classification method). The four datasets used in the analysis include a 2016 Landsat 8 image; a 90-meter SRTM-based DEM; mosaicked 2017 0.075-meter orthophotographs; and 1-meter LiDAR-based DEM and DSM.<br>
-
-          </br>The Landsat 8 image provided the red and near-infrared bands necessary to calculate NDVI and NDWI, which sought to distinguish vegetation type, health, and moisture content among the study area. The SRTM-based DEM provided the slope and aspect calculations in order to apply topographic correction to the Landsat 8 image, and the mosaicked orthophotographs' bands provided the high-resolution base imagery to draw the training polygons. The LiDAR-based DEM and DSM images were used to calculate Topographic Openness to better distinguish terrain differences within the study area as to eliminate shadow-based confusion.</p>
+            </br>Because the app is internal, it could not be embedded, but the screenshots below provide insight into what the app looks like and how it functions.</p>
           </div>
         </div>
       </div>
@@ -81,35 +79,57 @@
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-8">
-              <img src="assets/img/WaitakereStudyArea.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/pprexp_dist.PNG" alt="Image" class="img-fluid">
             </div>
             <div class="col-md-3 ml-auto">
               <div class="fixed">
-                <h3 class="h3">Study Area</h3>
-
                 <div class="mb-5">
-                  <p>The study area is located within the Waitakere Ranges, which is the most heavily impacted kauri forest within the country. The Waitakere Ranges are located west of Auckland, which is Aotearoa/New Zealand's most densely-populated city. The total study area is 770 acres (311 ha).</p>
+                  <p>This application uses different types of reference boundaries that PPR staff commonly use - PPR programming districts, PPR Operations districts, Philadelphia Police Department (PPD) districts, and Philadelphia City Council districts - which are buttons that can be toggled at the top left of the app to help the user locate and contextualize the property of interest.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
         <div class="site-section pb-0">
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-8">
-              <img src="assets/img/NZClassification.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/pprexp_search.PNG" alt="Image" class="img-fluid">
             </div>
             <div class="col-md-3 ml-auto">
               <div class="fixed">
-                <h3 class="h3">Supervised Classification Results</h3>
-
                 <div class="mb-5">
-                  <p>The overall accuracy for the supervised classification was low (48%); this is due to a lack of additional NIR and IR bands with high spatial resolution. Due to the lack of a budget, the best available free, open-source data was used. The Landsat 8 image provided the NIR and IR bands, yet it only had a 30-meter spatial resolution; if additional high-resolution NIR and IR bands were included, the classification likely would have been more accurate. The majority of the classification did not accurately classify the study area into the 3 appropriate classes, though the above map presents a section within the study area that semi-accurately classifies the canopy.<br>
-
-                  </br>The "classification reference" polygons represent the accurate locations of dead/dying kauri trees and vital kauri trees, whereas the "classification output" represents what the machine learning supervised classification identified. As can be seen, the classification is still not very accurate; however, some vegetation (such as the appropriate location of a dead kauri tree as well as multiple appropriate locations of vital kauris) is classified accurately. This indicates that with additional high-quality data, remote sensing techniques have the potential to accurately analyze Kauri Dieback within various kauri regions.</p>
+                  <p>The user can use the search bar at the top right of the app to find the property of interest. Property aliases (or shorter names that are used more by the public than by PPR) and full names both work.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/pprexp_mapclick.PNG" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <div class="fixed">
+                <div class="mb-5">
+                  <p>The user can alternatively pan and click on the property within the map to find its information. Regardless of whether the property is selected using the map or search bar, the property information appears in a table and in formatted text on the panel to the right. The formatted text finds which reference layers (PPR, Operations, PPD, or City Council districts) intersect with each property.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="assets/img/pprexp_about.PNG" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <div class="fixed">
+                <div class="mb-5">
+                  <p>A splash screen and an About page are included to assist the user in navigating the tool.</p>
+                </div>
               </div>
             </div>
           </div>
