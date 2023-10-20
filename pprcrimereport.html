@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Post-Classification Spatial Filtering</title>
+  <title>Accessing Census Data Through an API and Mapping with Folium</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -66,73 +66,19 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-17">
-            <h2>Post-Classification Spatial Filtering</h2>
-            <p class="mb-4"><span class="text-muted">Remote Sensing</span></p>
-            <p>The embedded <b><a href="https://rmarkdown.rstudio.com/"><font color='teal'>R Markdown</font></a></b> file shows a post-classification spatial filtering application for one land cover maps that I created for <a href="colombia.html"><font color="teal"><b><i>Mapping Drivers of Ecosystem Change in Colombia</i></b></font></a>, a remote sensing research project I provide support to at Temple University.<br>
+            <h2>Mass-producing stylized charts and tables with pandas, matplotlib, and HTML + CSS</h2>
+            <p class="mb-4"><span class="text-muted">Code Development</span></p>
+            <p>Every year, the <a href="https://www.phila.gov/departments/philadelphia-parks-recreation/"><b><font color="teal">Philadelphia Parks & Recreation (PPR)</font></b></a> GIS team is asked to provide a report on how many Philadelphia Police Department (PPD) <a href="https://data.phila.gov/visualizations/crime-incidents"><b><font color="teal">reported crime incidents</font></b></a> occurred on each <a href="https://opendataphilly.org/datasets/ppr-properties/"><b><font color="teal">PPR property</font></b></a> and within each <a href="https://opendataphilly.org/datasets/parks-recreation-districts/"><b><font color="teal">PPR programming district</font></b></a>. The analysis that informs this report has traditionally been done using ArcMap or ArcGIS Pro, while the hundreds of individual tables and graphs representing the analysis have been manually created in Excel and PowerPoint, resulting in a lengthy and tedious process that I sought to shorten and automate using Python (arcpy, pandas, matplotlib), HTML and CSS, and an ArcGIS Notebook as the IDE. I wrote this code in the winter/spring of 2022; it was only my second ArcGIS Notebook that I wrote by myself, and it was written within the first few months of learning (or <i>attempting</i> to teach myself) Python.<br>
 
-            </br>The end result is an updated classification map that has a higher overall accuracy score, as small patches of potentially misclassified oil palm were detected and reclassified to natural dense forest. The decision to apply spatial filtering in this method was based on literature and observations of the classified map's accuracy. This analysis was completed in RStudio and was developed by <a href="https://liberalarts.temple.edu/content/jeronimo-rodriguez"><font color="teal"><b>Jerónimo Rodriguez</b></font></a>, a PhD student at Temple University, and refined/compiled into an R Markdown script by me.</p>
+            </br><b>Scroll down to view the Notebook!</b></p>
           </div>
         </div>
       </div>
-      <div>
-        <script language="javascript" type="text/javascript" src="https://gist.github.com/evgorey/b5dd805c79f5f8830960bfabf415c7bc.js"></script>
 
-        <script language="javascript" type="text/javascript">
-
-        function windowSize() {
-          let gist = document.querySelector('#gist92442763');
-
-          let isMobile = {
-            Android: function() {
-                return /Android/i.test(navigator.userAgent)
-            },
-            BlackBerry: function() {
-                return /BlackBerry/i.test(navigator.userAgent)
-            },
-            iOS: function() {
-                return /iPhone|iPod/i.test(navigator.userAgent)
-            },
-            Opera: function() {
-                return /Opera Mini/i.test(navigator.userAgent)
-            },
-            Windows: function() {
-                return /IEMobile/i.test(navigator.userAgent) || /WPDesktop/i.test(navigator.userAgent)
-            },
-            any: function() {
-                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-            }
-        };
-
-          if(isMobile.any()) {
-            gist.style.width = "36%";
-            gist.style.WebkitOverflowScrolling = "touch"
-            gist.style.position = "absolute"
-          } else {
-            gist.style.width = "auto !important";
-          }
-        }
-
-        windowSize();
-
-        window.addEventListener('onresize', function() {
-            windowSize();
-        });
-
-        </script>
-
-        <style type="text/css">
-
-        .gist-data {
-          max-height: 10000px;
-        }
-
-        .gist-meta {
-          display: none;
-        }
-
-        .gist .blob-code-inner{ font-size:20px !important; }
-
-        </style>
+      <div class="container-fluid">
+        <div class="container">
+          <iframe src="https://nbviewer.org/gist/evgorey/394a6b47ae5522a704718013d3144db9" style="width:100%; height: 700px;"></iframe>
+        </div>
       </div>
     </section>
   </main><!-- End #main -->
