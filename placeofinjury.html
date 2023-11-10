@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Accessing Census Data Through an API and Mapping with Folium</title>
+  <title>Poster: An Analysis of Victim Residences and Injury Locations in Philadelphia</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -65,19 +65,23 @@
     <section class="section">
       <div class="container">
         <div class="row mb-4 align-items-center">
-          <div class="col-md-17">
-            <h2>Accessing Census Data Through an API and Mapping with Folium</h2>
+          <div class="col-md-10">
+            <h2>Poster: An Analysis of Victim Residences and Injury Locations in Philadelphia</h2>
             <p class="mb-4"><span class="text-muted">Spatial Analysis</span></p>
-            <p>In the Jupyter Notebook below, I use Census, a <a href="https://pypi.org/project/census/"><font color="teal"><b>Python wrapper around the Census API</b></font></a> to access some common U.S. Census Bureau ACS (American Community Survey) 5-year population estimate variables and then visualize some of the variables as choropleth maps using <a href="https://pypi.org/project/folium/"><font color="teal"><b>folium</b></font></a>.<br>
+            <p>The poster below was presented by my colleagues and I on the <a href="https://www.phila.gov/programs/injury-prevention-program/"><b><font color="teal">Philadelphia Department of Public Health (PDPH) Injury Prevention</font></b></a> team at the <a href="https://www.firearmresearchsociety.org/general-information"><b><font color="teal">National Research Conference for the Prevention of Firearm-Related Harms</font></b></a> in Chicago, November 2023. Represented is a secondary analysis of de-identified police-derived data to examine the patterns in distance between firearm injury locations and the residences of injured people in Philadelphia between 2015-2022. In the field of firearm injury prevention, criminal justice professionals typically provide the firearm injury location, whereas medical professional provide residence locations for injured people; oftentimes, these two sets of locations are not analyzed in tandem, which is necessary to better understand geographic patterns of violence and to inform the different types of interventions that different stakeholders are leading across the city, such as Cure Violence and other violence interruption programs, neighborhood greening and vacant lot remediation efforts, hospital-based violence intervention programs, community-based youth programs, and more.<br>
 
-            </br><b>Scroll down to view and interact with the Jupyter Notebook! Note: it may take a moment to load.</b></p>
+            </br>I geocoded both sets of injury and residence addresses in R using the <a href="https://github.com/CityOfPhiladelphia/ais"><b><font color="teal">City of Philadelphia's AIS geocoder</font></b></a>, which is free, more accurate than other Philadelphia geocoders, and can handle large batches of addresses. 78% of the original injuries had accurate residential addresses and were able to be successfully geocoded into separate injury and residence point layers. After geocoding, the points were joined and brought into an ArcGIS Pro/Notebook environment. The road network distance between each matched injury and residence was calculated using the ArcGIS Online network and the <a href="https://github.com/Esri/large-network-analysis-tools"><b><font color="teal">LargeNetworkAnalysisTools.pyt toolbox</font></b></a> (Solve Large Analysis With Known OD Pairs tool) to allow for chunking and parallel processing. Statistical tests were performed in Python using <a href="https://pypi.org/project/statsmodels/"><b><font color="teal">statsmodels</font></b></a>, <a href="https://pypi.org/project/scipy/"><b><font color="teal">scipy</font></b></a>, and <a href="https://pypi.org/project/pingouin/"><b><font color="teal">pingouin</font></b></a>. I calculated "neighborhood mobility," in which residential and neighboring Census tracts were used as a proxy for neighborhoods, with <a href="https://pypi.org/project/fiona/"><b><font color="teal">fiona</font></b></a> and <a href="https://pypi.org/project/geopandas/"><b><font color="teal">geopandas</font></b></a>. The maps were produced with ArcGIS Pro and the graphs were produced using <a href="https://pypi.org/project/seaborn/"><b><font color="teal">seaborn</font></b></a> and <a href="https://pypi.org/project/matplotlib/"><b><font color="teal">matplotlib</font></b></a>. Census neighborhood-level variables, which will be included in the next steps of this analysis, were accessed through <a href="https://pypi.org/project/census/"><b><font color="teal">Census, a Python wrapper around the Census API</font></b></a>.</p>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div class="site-section pb-0">
         <div class="container">
-          <iframe src="https://nbviewer.org/gist/evgorey/1a72f750b16e06b2258cb0bc5c2655a7" style="width:100%; height: 700px;"></iframe>
+          <div class="row align-items-stretch">
+            <div class="col-lg">
+              <img src="assets/img/poster.PNG" alt="Image" class="img-fluid">
+            </div>
+          </div>
         </div>
       </div>
     </section>
