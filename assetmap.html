@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Automating a Survey123 Feature's Edits & Geocoding</title>
+  <title>Automating a Survey123 feature's edits & geocoding</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -66,71 +66,18 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-17">
-            <h2>Automating a Survey123 Feature's Edits & Geocoding</h2>
+            <h2>Automating a Survey123 feature's edits & geocoding</h2>
             <p class="mb-4"><span class="text-muted">Spatial Analysis</span></p>
-            <p>The <a href="https://www.phila.gov/departments/department-of-public-health/">City of Philadelphia Department of Public Health (PDPH)</a> Division of Chronic Disease & <a href="https://www.phila.gov/departments/department-of-public-health/disease-prevention/injury-prevention/">Injury Prevention</a> (CDIP) is 1) collecting service, contact, and geography data on existing gun violence prevention programs that currently serve the City of Philadelphia using a Survey123 form and 2) using these data to build a web mapping application so that the public and service providers can locate existing resources and connect people in need.<br>
-            </br>The embedded <b><a href="https://gist.github.com/evgorey/8610bccbeffdf1529e900926578c728b#file-postsurveyedit_public-ipynb"><font color='teal'>ArcGIS Notebook</font></a></b> (the ESRI version of the Jupyter Notebook) is designed to pull in responses from the Survey123 form, clean the feature, create a separate point feature representing geocoded program headquarters, and update polygon geometries based on selected geographic units (zip codes, Philadelphia Police District (PPD) boundaries, and self-drawn boundaries) representing program service area boundaries.<br>
-            </br>2 layers are created and cleaned to be exported to ArcGIS Online (AGO) and then used by the City of Philadelphia Office of Innovation & Technology (OIT) to incorporate into a custom web mapping application. This code is still being developed and is primarily written in Python (pandas and arcpy).</p>
+            <p>The <a href="https://www.phila.gov/departments/department-of-public-health/">City of Philadelphia Department of Public Health (PDPH)</a> Division of Chronic Disease & <a href="https://www.phila.gov/departments/department-of-public-health/disease-prevention/injury-prevention/">Injury Prevention</a> (CDIP) was 1) collecting service, contact, and geography data on existing gun violence prevention programs that currently serve the City of Philadelphia using a Survey123 form and 2) using these data to build a web mapping application so that the public and service providers can locate existing resources and connect people in need.<br>
+            </br>The embedded <b><a href="https://nbviewer.org/gist/evgorey/167307bbeb0e1e000d3a5f8d32ed4735"><font color='teal'>ArcGIS Notebook</font></a></b> is designed to pull in responses from the Survey123 form, clean the feature, create a separate point feature representing geocoded program headquarters, and update polygon geometries based on selected geographic units (zip codes, Philadelphia Police District (PPD) boundaries, and self-drawn boundaries) representing program service area boundaries.<br>
+            </br>2 layers are created and cleaned to be exported to ArcGIS Online (AGO) for use.</p>
           </div>
         </div>
       </div>
-      <div>
-        <script language="javascript" type="text/javascript" src="https://gist.github.com/evgorey/8610bccbeffdf1529e900926578c728b.js"></script>
-
-        <script language="javascript" type="text/javascript">
-
-        function windowSize() {
-          let gist = document.querySelector('#gist92442763');
-
-          let isMobile = {
-            Android: function() {
-                return /Android/i.test(navigator.userAgent)
-            },
-            BlackBerry: function() {
-                return /BlackBerry/i.test(navigator.userAgent)
-            },
-            iOS: function() {
-                return /iPhone|iPod/i.test(navigator.userAgent)
-            },
-            Opera: function() {
-                return /Opera Mini/i.test(navigator.userAgent)
-            },
-            Windows: function() {
-                return /IEMobile/i.test(navigator.userAgent) || /WPDesktop/i.test(navigator.userAgent)
-            },
-            any: function() {
-                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-            }
-        };
-
-          if(isMobile.any()) {
-            gist.style.width = "36%";
-            gist.style.WebkitOverflowScrolling = "touch"
-            gist.style.position = "absolute"
-          } else {
-            gist.style.width = "auto !important";
-          }
-        }
-
-        windowSize();
-
-        window.addEventListener('onresize', function() {
-            windowSize();
-        });
-
-        </script>
-
-        <style type="text/css">
-
-        .gist-data {
-          max-height: 5000000000000000px;
-        }
-
-        .gist-meta {
-          display: none;
-        }
-
-        </style>
+      <div class="container-fluid">
+        <div class="container">
+          <iframe src="https://nbviewer.org/gist/evgorey/17c1f16adf2d4b1e0ba4d6217bd1c371" width="100%" height="14800px"></iframe>
+        </div>
       </div>
     </section>
   </main><!-- End #main -->
@@ -159,6 +106,7 @@
   </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
