@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Arizona Environmental Justice Characteristics</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.6.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Evelyn Gorey GIS Portfolio.</a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-10">
+            <h2>Arizona Environmental Justice Characteristics</h2>
+            <p class="mb-4"><span class="text-muted">Web Mapping, Spatial Analysis</span></p>
+            <p>In my recent studies regarding the locations of Superfund sites (or sites contaminated by hazardous waste and therefore managed by the <b><a href="https://www.epa.gov/"><font color='teal'>Environmental Protection Agency (EPA)</font></a></b>), I found that 532 (nearly 25%) total Superfund sites are located in Indian Country, or in territories governed by Indigenous communities.<br>
+
+            </br>Superfund sites are characterized by severe pollution and then abandonment by corporations, which in turn dumps the serious environmental, health, and economic consequences affiliated with these sites onto nearby residents. On Navajo lands in particular, over 500 abandoned uranium mines (not all of which are currently Superfund sites) have contributed to dangerously high levels of radiation, which contaminates homes and water sources. Other recent research findings illustrating the socioeconomic and racial disparities in the impacts of pollution in addition to the release of the EPA’s nationwide <b><a href="https://www.epa.gov/ejscreen"><font color='teal'>Environmental Justice Screening dataset</font></a></b> have inspired me to analyze and map various environmental justice characteristics in the state of Arizona, which includes Navajo lands.<br>
+
+          </br>The overarching goals of this analysis are to use the EPA Environmental Justice Screening dataset to:<br>
+          </br><b>1) determine to what extent the percentage of minority (non-white) populations is correlated to variables such as cancer risk and proximity to Superfund sites and to</b><br>
+          </br><b>2) determine the suitability of this dataset in modeling these socioeconomic and racial disparities that I have researched.</b><br>
+          </br>This analysis entails an exploratory analysis of the relationships between chosen variables (using the seaborn Python library and a Pearson correlation analysis) as well as the production of static maps to visualize these relationships. Correlation was tested to determine relationships between the percentage of minority (non-white) populations and five other variables: % low-income population, the air toxins cancer risk, the respiratory hazard index, the lead paint prevalence index, and proximity to National Priority List (NPL) sites (or extreme cases of Superfund sites).<br>
+        </br>The air toxins cancer risk and respiratory hazard index variables were found to have the two most significant correlation coefficients at .78 and .77, respectively. These relatively strong positive trends indicate that as the percentage of minority population rises in a census block group, cancer risk and respiratory hazard also both rise. The variable with no correlation is proximity to NPL sites, with a correlation coefficient of 0.07.<br>
+
+      </br>Below is the Jupyter Notebook presenting the results of the statistical analysis. Python packages seaborn, geopandas, and matplotlib were used in the analysis.<br>
+    </p>
+  </div>
+  <div>
+    <script language="javascript" type="text/javascript" src="https://gist.github.com/evgorey/d91e34a7fc176a3793004715072ae769.js"></script>
+
+      <script language="javascript" type="text/javascript">
+
+        function windowSize() {
+          let gist = document.querySelector('#gist92442763');
+
+          let isMobile = {
+            Android: function() {
+                return /Android/i.test(navigator.userAgent)
+            },
+            BlackBerry: function() {
+                return /BlackBerry/i.test(navigator.userAgent)
+            },
+            iOS: function() {
+                return /iPhone|iPod/i.test(navigator.userAgent)
+            },
+            Opera: function() {
+                return /Opera Mini/i.test(navigator.userAgent)
+            },
+            Windows: function() {
+                return /IEMobile/i.test(navigator.userAgent) || /WPDesktop/i.test(navigator.userAgent)
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
+          if(isMobile.any()) {
+            gist.style.width = "36%";
+            gist.style.WebkitOverflowScrolling = "touch"
+            gist.style.position = "absolute"
+          } else {
+            gist.style.width = "auto !important";
+          }
+        }
+
+        windowSize();
+
+        window.addEventListener('onresize', function() {
+            windowSize();
+        });
+
+        </script>
+
+        <style type="text/css">
+
+        .gist-data {
+          max-height: 10000px;
+        }
+
+        .gist-meta {
+          display: none;
+        }
+
+        </style>
+      </div>
+
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-10">
+          <p>Below is a web map presenting each choropleth maps of a few of the tested variables for Arizona census block groups. The web map was made using MapBox and all static maps were made using ArcGIS Pro.
+        </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="container">
+          <iframe src="https://opalescent-ash-actress.glitch.me/finalmap.html" style="width:100%; height: 700px;"></iframe>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="../assets/img/PercentLI.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+          </div>
+        </div>
+
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="../assets/img/CancerRisk.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="../assets/img/RespHazard.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+            </div>
+          </div>
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="../assets/img/NPL.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+            </div>
+          </div>
+
+        <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8">
+              <img src="../assets/img/LeadPaint.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="h3">Results</h3>
+
+                <div class="mb-5">
+                  <p>Overall, the results of the exploratory analysis largely agreed with what I had already been expecting; for example, the somewhat high correlation between minority population and lead paint prevalence is already well-known nationally. One result that was surprising is that no NPL sites are located within the First Nation territories; given my research prior to the analysis, I was expecting at least a slightly higher correlation between minority population and the locations of NPL sites.<br>
+
+                  </br>The results of this analysis indicate that the number of toxic sites such as the 500 located on Navajo lands is largely underrepresented by the EPA Environmental Justice dataset; this could influence decision-makers and researchers relying on this dataset to overlook the harm that sites of pollution not listed as NPL bring to communities. Because NPL sites are only a subset of national Superfund sites, additional analyses should be conducted with Superfund site locations to determine the relationship with the minority population percentage. However, the EPA should consider adding a Superfund site proximity variable (or other variables that can distinguish harmful sites such as the uranium mines) to its dataset for a more accurate representation of pollution.<br></p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Evelyn Gorey GIS Portfolio. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://www.linkedin.com/in/evelyn-gorey-06a913150/"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
